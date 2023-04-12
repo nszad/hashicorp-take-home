@@ -28,7 +28,7 @@ To synchronize your local branch with the remote branch, first run `git fetch` t
 
 #### Git merge
 
-To do that, you'll need to do `git merge origin/master` (for the "master" branch) to merge those changes into your branch - probably also called "master".
+To update your local branch with the newly fetched changes, run e.g. `git merge origin/main` to "merge" the changes from the tracking branch for `main` into your local branch (which in this case should also be called "main").
 
 #### Git pull
 
