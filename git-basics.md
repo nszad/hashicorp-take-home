@@ -18,7 +18,9 @@ Now, let's describe each command step by step to better grasp the unique functio
 
 #### Git push
 
-Often `git push` and `git pull` are described as equivalent. This isn't entirely correct, since under the hood `git pull` does two things. `git push` takes our current branch, and checks to see whether or not there is a tracking branch for a remote repository connected to it. If so, our changes are taken from our branch and pushed to the remote branch. This is how code is shared with a remote repository, you can think of it as "make the remote branch resemble my local branch". This will fail if the remote branch has diverged from your local branch: if not all the commits in the remote branch are in your local branch. When this happens, your local branch needs to be synchronized with the remote branch with git pull or git fetch and git merge.
+Let's say you want to update the remote repository with your changes. When you run `git push`, Git first checks whether you have a tracking branch (a local reference to an upstream branch in a remote repository) associated with the local branch you are working on. Once located, Git "pushes" any changes you've made to the remote branch. The local branch and the remote branch now share those changes. In other words, `git push` makes the remote branch resemble your local branch. 
+
+NOTE: This command will print an error message if the remote branch has diverged from your local branch. This means that the remote branch has changes that are not in your local branch. This brings us to `git fetch`, `git merge`, and `git pull`.
 
 #### Git fetch
 
