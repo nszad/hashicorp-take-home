@@ -1,14 +1,18 @@
 # Git Basics
 
-## Push, Pull, and Fetch
+## Push, Pull, Fetch, and Merge
 
 At first glance, these Git commands may appear similar and therefore confusing. Let's start with brief definitions, then describe how to use these commands to get started with version control using Git.
 
 - `git push` - sent changes from a local branch to a remote repo
+
 - `git fetch` - get changes from a remote repo into your tracking branch
+
+- `git merge` - Update a local branch with any new changes from a tracking branch, usually directly following `git fetch`.
+
 - `git pull` - will get changes from a remote branch into your tracking branch and merge them into a local branch
 
-### Understanding the difference between Push, Pull, and Fetch
+### Understanding the difference between Push, Pull, Fetch, and Merge
 
 Now, let's describe each command step by step to better grasp the unique function of each. This section assumes that you have cloned a repository and have begun to make changes to a branch locally.
 
