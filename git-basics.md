@@ -24,7 +24,7 @@ NOTE: This command will print an error message if the remote branch has diverged
 
 #### Git fetch
 
-`git fetch` again takes our current branch, and checks to see if there is a tracking branch. If so, it looks for changes in the remote branch, and pulls them into the tracking branch. It does not change your local branch.
+To synchronize your local branch with the remote branch, first run `git fetch` to update the tracking branch associated with your local branch with the changes from the remote branch. NOTE: This does not update your local branch. 
 
 #### Git merge
 
