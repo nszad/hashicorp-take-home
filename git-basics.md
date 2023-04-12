@@ -32,4 +32,4 @@ To update your local branch with the newly fetched changes, run e.g. `git merge 
 
 #### Git pull
 
-`git pull` simply does a `git fetch` followed immediately by `git merge`. This is often what we desire to do, but some people prefer to use git fetch followed by git merge to make sure they understand the changes they are merging into their branch before the merge happens.
+`git pull` is the same as first running `git fetch`, then immediately running `git merge`. This can be more efficient, but you may prefer to run each command individually in sequence to make sure you understand the changes you are going to make to a branch before you execute the merge.
